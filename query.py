@@ -40,7 +40,6 @@ init_app()
 
 # Get the brand with the ``id`` of "ram."
 q1 = Brand.query.filter_by(brand_id='ram').first()
-q1 = q1.name
 
 # Get all models with the name "Corvette" and the brand_id "che."
 q2 = Model.query.filter(Model.name=='Corvette', Model.brand_id=='che').all()
